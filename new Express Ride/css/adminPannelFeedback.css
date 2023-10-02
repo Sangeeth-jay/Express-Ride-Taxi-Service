@@ -1,0 +1,87 @@
+        .feedbacks-container {
+            height: 70vh;
+            overflow-y: scroll;
+        }
+
+        .tab-feedback table {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            margin: 0;
+            padding: 0.5em;
+            width: 90%;
+            height: 12vh;
+            table-layout: fixed;
+        }
+
+        .tab-feedback table tr {
+            font-size: 20px;
+            padding: 0.75em;
+        }
+
+        .tab-feedback table th,
+        .tab-feedback table td {
+            font-family: Roboto;
+            color: #949391;
+            padding: 0.625em;
+            text-align: center;
+        }
+
+        .tab-feedback table th {
+            /* letter-spacing: 0.1em; */
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                max-width: 200px;
+            }
+
+            .table-responsive {
+                max-width: 90vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tab-feedback table {
+                border: 0;
+            }
+
+            .tab-vehicle {
+                visibility: hidden;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90vw;
+            }
+
+            .tab-feedback table th {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+
+            .tab-feedback table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: 0.8em;
+                text-align: right;
+            }
+
+            .tab-feedback table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .tab-feedback table td:last-child {
+                border-bottom: 0;
+            }
+        }

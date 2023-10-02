@@ -1,0 +1,89 @@
+.add-new {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.tab-vehicle table {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  padding: 0.5em;
+  width: 90%;
+  height: 12vh;
+  table-layout: fixed;
+}
+
+.tab-vehicle table tr {
+  font-size: 20px;
+  padding: 0.75em;
+}
+
+.tab-vehicle table th,
+.tab-vehicle table td {
+  font-family: Roboto;
+  color: #949391;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.tab-vehicle table th {
+  /* letter-spacing: 0.1em; */
+  text-transform: uppercase;
+}
+
+.tab-vehicle .vehicle-details {
+  height: 35vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    max-width: 200px;
+  }
+
+  .table-responsive {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-vehicle table {
+    border: 0;
+  }
+
+  .tab-vehicle table th {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .tab-vehicle table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .tab-vehicle table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .tab-vehicle table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .tab-vehicle table td:last-child {
+    border-bottom: 0;
+  }
+}

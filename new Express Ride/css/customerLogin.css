@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.login-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FFC300;
+    width: 30%;
+    height: auto;
+    margin: 7% auto;
+    padding: 25px 10px;
+    border-radius: 15px;
+    
+}
+
+.form-label {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto Serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #FFC300;
+    width: 40%;
+    font-family: Roboto Serif;
+    font-size: 20px;
+}
+.text-center{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 45px;
+}
+.form-newAccount{
+    color: #fff;
+    text-decoration: none;
+
+}
+.form-control{
+    margin-top: -5px;
+    width: 85%;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+
+/* responsive */
+@media screen and (max-width:800px) {
+    .login-form {
+        width: 40%;
+        margin: 7% auto;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .login-form {
+        width: 80%;
+        margin: 7% auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .btn-light {
+        width: 40%;
+
+    }
+    .form-newAccount{
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    .form-check-label{
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,11 @@
+
+.tab-news {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.tab-news .show_news {
+    height: 40vh;
+    overflow-y: scroll;
+    padding: 1em;
+}

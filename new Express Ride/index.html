@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Express Ride</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .bg-img-1 {
+      background-image: url("img/slide1.jpg");
+    }
+
+    .bg-img-2 {
+      background-image: url("img/slide2.jpg");
+    }
+
+    .bg-img-3 {
+      background-image: url("img/slide3.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navigation -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h2>Express<span style="color: #ffc300">Ride</span></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <button class="btn btn-warning ms-auto" style="
+              color: #ffffff;
+              width: 8em;
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            " onclick="location.href='customerLogin.php'">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- slider -->
+  <section id="img-slider">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image bg-img-1 active">
+          <div class="carousel-caption ">
+            <h5 style="text-align: center;">We Provide Best Taxi Service in the City</h5>
+            <p style="text-align: center;">Some representative placeholder content for the first slide.</p>
+            <p><a href="#" class="btn btn-warning mt-3" style="color: #ffffff; font-weight: 500;">Book Now</a></p>
+
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-2">
+          <div class="carousel-caption ">
+            <h5 style="text-align: center;">We have Friendly Staff you ever have seen</h5>
+            <p style="text-align: center;">Some representative placeholder content for the second slide.</p>
+            <p><a href="#" class="btn btn-warning mt-3" style="color: #ffffff; font-weight: 500;">Book Now</a></p>
+
+          </div>
+        </div>
+        <div class="carousel-item carousel-image bg-img-3">
+          <div class="carousel-caption ">
+            <h5 style="text-align: center;">We make you comfortable by Luxary</h5>
+            <p style="text-align: center;">Some representative placeholder content for the third slide.</p>
+            <p><a href="#" class="btn btn-warning mt-3" style="color: #ffffff; font-weight: 500;">Book Now</a></p>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- how to work -->
+  <section id="howto" class="howto-section-padding p-5 " style="height: 90vh;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="howto-img">
+            <img src="img/image1.jpg" alt="about" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 col-12 mt-5">
+          <div class="howto mt-5">
+            <h1 style="color: #3B3B3A;">HOW TO WORK Express<span style="color: #ffc300;">Ride</span>
+              SERVICES ?</h1>
+
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="slides col-lg-10 col-md-10 col-10">
+                <div class="mySlides" style="width: auto; height: 200px;">
+                  <h2 style="color: #949591;">1.Log in to the account</h2>
+                  <p style="color: #949591;padding-left: 1em;">As a easy step, first you can log in to
+                    the your account using your email and correct
+                    password. If you haven't account must need to create an account</p>
+                </div>
+
+                <div class="mySlides " style="width: auto; height: 200px;">
+                  <h2 style="color: #949591;">2.Press the "Booking" button</h2>
+                  <p style="color: #949591;padding-left: 1em;">Easy step two. Left corner of the
+                    dashbord you can see "Booking" button. Pressing the
+                    button you can access the booking portal. Filling picked-up point and
+                    destination
+                    you can choose your vehicle type and date & time you need to travel.</p>
+                </div>
+
+                <div class="mySlides " style="width: auto; height: 200px;">
+                  <h2 style="color: #949591;">3.At the time you can enjoy the your ride</h2>
+                  <p style="color: #949591;padding-left: 1em;">After reaching your destination you can
+                    pay the bill and complete your ride.</p>
+
+                </div>
+              </div>
+              <div class="arrows">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+            </div>
+
+            <!-- Next and previous buttons -->
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- about us    -->
+
+  <section id="about-us" style="background-color: #f1fbff; position: relative; ">
+    <div class="container">
+      <div class="row"
+        style="display: flex; justify-content: center; gap: 2em; padding-top: 2em ; padding-bottom: 2em;">
+        <div class="col-lg-5 col-md-12 col-12 about-img">
+          <img src="img/about.png" alt="" class="col-12">
+        </div>
+        <div class="col-lg-5 col-md-12 col-12 about-text">
+          <h1 style="color: #3B3B3A;">About Express<span style="color: #ffc300;">Ride</span> Service
+          </h1>
+          <p>
+          <h6 style="color: #949591; line-height: 1.9; padding-top: 1em;" class="about-para">"At
+            ExpressRide, we're dedicated to redefining your transportation experience. With a
+            commitment to punctuality, reliability, and passenger safety, we've become your trusted
+            partner in getting you to your destination, hassle-free. Our fleet of well-maintained,
+            comfortable vehicles and professional drivers are here to provide you with a superior
+            taxi
+            service. Whether you're commuting to work, heading to the airport, or exploring the
+            city,
+            choose ExpressRide for a convenient and enjoyable journey. We take pride in being your
+            dependable ride whenever and wherever you need it."</h6>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- packages -->
+  <div id="packages"></div>
+
+  <section id="packages1" class="mt-5 mb-5">
+
+    <center>
+      <h1>PACKAGES</h1>
+    </center>
+
+    <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-sm-block " data-bs-ride="carousel">
+      <div class="carousel-inner p-5">
+        <div class="carousel-item active">
+          <div class="card-wrapper container-sm d-flex  justify-content-around">
+            <div class="card  ">
+              <center>
+                <div class="image-wrapper mt-3">
+                  <img src="img/cab.png" alt="...">
+                  <h3 class="card-title">Cab</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+
+
+            </div>
+            <div class="card">
+              <center>
+                <div class="image-wrapper mt-3">
+                  <img src="img/Car.png" alt="...">
+                  <h3 class="card-title">Car</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+            </div>
+            <div class="card">
+              <center>
+                <div class="image-wrapper mt-4">
+                  <img src="img/Van.png" alt="...">
+                  <h3 class="card-title van">Van</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-wrapper container-sm d-flex   justify-content-around">
+            <div class="card  ">
+              <center>
+                <div class="image-wrapper mt-3">
+                  <img src="img/minivan.png" alt="...">
+                  <h3 class="card-title">Mini-Van</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+            </div>
+            <div class="card">
+              <center>
+                <div class="image-wrapper mt-3">
+                  <img src="img/suv.png" alt="...">
+                  <h3 class="card-title">SUV</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+            </div>
+            <div class="card">
+              <center>
+                <div class="image-wrapper mt-4">
+                  <img src="img/bus.png" alt="...">
+                  <h3 class="card-title bus">Bus</h3>
+                  <h5>100 Rs. per 1km</h5>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  </section>
+
+  <section id="packages2">
+
+    <div id="carouselExample" class="carousel carousel-dark slide d-sm-none mb-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/suv.png" alt="...">
+              <h3 class="card-title">SUV</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/cab.png" alt="...">
+              <h3 class="card-title">Cab</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/Car.png" alt="...">
+              <h3 class="card-title">Car</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/minivan.png" alt="...">
+              <h3 class="card-title">Mini-van</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/Van.png" alt="...">
+              <h3 class="card-title">Van</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="image-wrapper mt-3">
+              <img src="img/bus.png" alt="...">
+              <h3 class="card-title">Bus</h3>
+              <h5>100 Rs. per 1km</h5>
+            </div>
+          </center>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- contact us -->
+
+  <section id="contact-us" class="contactus-section">
+    <div class="container mt-5">
+      <div class="address">
+        <h2>Express<span style="color: #ffc300;">Ride</span></h2>
+        <h1 style="color: #3B3B3A;">HEADQUARTERS</h1>
+        <h3>No : 23/A, Gunawardena Mawatha, Kaluwella, Galle, Sri Lanka</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.google.com/maps/place/Nugegoda/@6.8628392,79.915793,13.91z/data=!4m6!3m5!1s0x3ae25a7a9577b535:0x62e4b0a7bd678e33!8m2!3d6.8649081!4d79.8996789!16zL20vMDNwczUw?entry=ttu"
+              title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="contact-container">
+            <center>
+              <h1 style="color: #fff; font-weight: bold;">Get in Touch</h1>
+            </center>
+            <div style="  display: flex;
+            justify-content: center;">
+              <form action="">
+                <label for="">Name</label><br>
+                <input class="form-control form-control-md" type="text" placeholder="Enter your name"><br>
+                <label for="">E-mail</label><br>
+                <input class="form-control form-control-md" type="text" placeholder="Enter your email"><br>
+                <label for="">Message</label><br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Message"></textarea><br>
+                <center><button class="btn btn-light"
+                    style="color: #ffc300; font-weight: 700;margin-top: 1em;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">Submit</button>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container-fluid mt-5" style="background: rgba(105, 105, 104, 0.20);">
+      <div class="container ">
+        <div class="row company">
+          <div class="col-lg-4 mt-5 mb-5 me-auto">
+            <h1>Express<span style="color: #ffc300;">Ride</span></h1>
+            <h6><a href="">About Us</a> | <a href="">Careers</a> | <a href="">FAQ</a></h6>
+          </div>
+          <div class="col-lg-3 mt-5 ms-auto">
+            Telephone - +94 1122 88 498 <br>
+            E-mail - info@expressride.com
+          </div>
+          <div class="col-lg-3 mt-5 ">
+            Address - No 485 7/A, <br>
+            Kaluwella,<br>
+            Galle,<br>
+            Nugegoda, Sri Lanka
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </footer>
+
+  <footer>
+    <div class="container-fluid p-3"
+      style="display: flex; justify-content: center; background-color: #949591; color: #fff;">
+      <h6>All Rights Reserved</h6>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+
+</html>
