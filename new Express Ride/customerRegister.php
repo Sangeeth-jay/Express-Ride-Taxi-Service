@@ -87,27 +87,27 @@ include 'db/db_config.php';
                     alert("error");
 
                 }
-                if (password == reenterpassword) {
+                // if (password == reenterpassword) {
 
-                    $.post($("#customer-registration").attr("action"),
-                        $("#customer-registration :input").serializeArray(),
-                        function(info) {
-                            $("#cus_alert-text").empty();
-                            $("#cus_alert-text").html(info);
-                        });
-                    // $(".form-control").vl('');
-                    $("#customer-registration").submit(function() {
-                        return false;
-                    });
-                    window.setTimeout(function() {
-                        $("#cus_alert-text").alert('close');
-                    }, 2000);
-                } else {
-                    alert('Password is Not Equal');
+                //     $.post($("#customer-registration").attr("action"),
+                //         $("#customer-registration :input").serializeArray(),
+                //         function(info) {
+                //             $("#cus_alert-text").empty();
+                //             $("#cus_alert-text").html(info);
+                //         });
+                //     // $(".form-control").vl('');
+                //     $("#customer-registration").submit(function() {
+                //         return false;
+                //     });
+                //     window.setTimeout(function() {
+                //         $("#cus_alert-text").alert('close');
+                //     }, 2000);
+                // } else {
+                //     alert('Password is Not Equal');
 
-                    // var result = document.getElementById('result').value;
-                    // document.getElementById('cus_alert-text').innerHTML = result;
-                }
+                //     // var result = document.getElementById('result').value;
+                //     // document.getElementById('cus_alert-text').innerHTML = result;
+                // }
             });
         });
     </script>

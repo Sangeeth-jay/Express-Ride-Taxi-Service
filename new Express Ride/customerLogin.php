@@ -52,7 +52,7 @@
                         <div class="mb-3 form-check">
                             <label class="form-check-label mt-3 mb-4" for="exampleCheck1" style="margin-left: -10px;">Need to
                                 create Account ? </label>
-                            <a href="customerRegister.php" class="form-newAccount">Account</a>
+                            <a href="customerRegister.php" class="form-newAccount">Create New</a>
                     </center>
             </div>
             </form>
