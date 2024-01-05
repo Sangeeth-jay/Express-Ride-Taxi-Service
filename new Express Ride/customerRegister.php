@@ -60,7 +60,7 @@ include 'db/db_config.php';
                     <center>
                         <p><label class="form-check-label" for="exampleCheck1">Have an
                                 Account ? </label>
-                            <a href="customerLogin.html" class="form-newAccount">Login</a>
+                            <a href="customerLogin.php" class="form-newAccount">Login</a>
                         </p>
                     </center>
 
